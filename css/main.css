@@ -692,16 +692,14 @@ main {
   .hero::after {
     position: absolute;
     right: calc(50% - 183px);
-    bottom: calc(50% - 2296px);
+    bottom: calc(50% - 296px);
     background-image: url("../images/header-bg-bottom1x.png");
   }
   .title-wrapper {
-    width: 37%;
     max-width: 327px;
     margin-bottom: 18px;
   }
   .hero__title {
-    text-align: center;
     font-size: 40px;
   }
   .text-wrapper {
