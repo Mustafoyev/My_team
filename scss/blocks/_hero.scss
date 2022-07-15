@@ -205,6 +205,44 @@
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .hero {
+    padding: 38px 0 197px 0;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .hero::after {
+    position: absolute;
+    right: calc(50% - 183px);
+    bottom: calc(50% - 2296px);
+    background-image: url("../images/header-bg-bottom1x.png");
+  }
+
+  .title-wrapper {
+    width: 37%;
+    max-width: 327px;
+    margin-bottom: 18px;
+  }
+
+  .hero__title {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .text-wrapper {
+    max-width: 327px;
+    padding: 0;
+  }
+
+  .hero__text {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-o-min-device-pixel-ratio: 2/1),
