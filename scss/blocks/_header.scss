@@ -62,34 +62,14 @@
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
+  .site-header {
+    padding: 64px 0;
+  }
+
   .logo {
-    width: 128px;
     margin-right: 48px;
-  }
-
-  .btn {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 660px) {
-  .logo {
-    margin-right: 38px;
-  }
-
-  .navbar__item + .navbar__item {
-    margin-left: 20px;
-  }
-
-  .header__link {
-    padding: 6px 6px 6px 6px;
-    width: 100%;
-    max-width: 110px;
-  }
-
-  .btn {
-    display: none;
+    width: 128px;
   }
 }
 
@@ -112,11 +92,5 @@
     border: none;
     background-color: transparent;
     color: #ffffff;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .site-header {
-    padding: 48px 0;
   }
 }
