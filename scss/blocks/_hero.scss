@@ -283,7 +283,7 @@
   }
 
   .title-wrapper {
-    width: 50%;
+    width: 45%;
     max-width: 400px;
     margin-bottom: 18px;
   }
@@ -302,6 +302,14 @@
   .hero__text {
     font-size: 15px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 472px) {
+  .title-wrapper {
+    width: 50%;
+    max-width: 400px;
+    margin-bottom: 18px;
   }
 }
 
@@ -345,9 +353,15 @@
   .hero::after {
     right: 0;
     left: 0;
-    top: 365px;
+    top: 330px;
     bottom: 0;
     margin: 0 auto;
+  }
+
+  .title-wrapper {
+    width: 60%;
+    max-width: 327px;
+    margin-bottom: 18px;
   }
 }
 
