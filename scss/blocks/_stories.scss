@@ -1,0 +1,233 @@
+.stories {
+	position: relative;
+	padding: 140px 0 245px 0;
+	background-color: #004047;
+}
+
+.stories::before {
+	position: absolute;
+	top: calc(50% - 372px);
+	left: calc(50% - 844px);
+	width: 147px;
+	height: 100px;
+	background-image: url('../images/stories-before-bg1x.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: '';
+}
+
+.stories::after {
+	position: absolute;
+	right: calc(50% - 844px);
+	bottom: calc(50% - 372px);
+	width: 200px;
+	height: 100px;
+	background-image: url('../images/stories-after-bg1x.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: '';
+}
+
+.title-wrapper {
+	width: 100%;
+	max-width: 932px;
+	margin: 0 auto;
+}
+
+.stories__title {
+	margin: 0;
+	margin-bottom: 92px;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 100%;
+	text-align: center;
+	color: #ffffff;
+}
+
+.title-color {
+	display: inline-block;
+	color: #79c8c7;
+}
+
+.stories__list {
+	@include display-starter;
+	@include list-styles;
+	justify-content: center;
+}
+
+.stories__item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+}
+
+.stories__item + .stories__item {
+	margin-left: 30px;
+}
+
+.stories__item::before {
+	position: absolute;
+	top: calc(50% - 121px);
+	left: calc(50% - 34px);
+	width: 67px;
+	height: 56px;
+	background-image: url('../images/kavichka.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: '';
+}
+
+.stories__item::after {
+	position: absolute;
+	left: calc(50% - 34px);
+	bottom: calc(50% - 180px);
+	width: 62px;
+	height: 62px;
+	background-image: url('../images/Oval_11x.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: '';
+}
+
+.stories__item:nth-child(2)::after {
+	background-image: url('../images/Oval_21x.png');
+}
+
+.stories__item:nth-child(3)::after {
+	background-image: url('../images/Oval_31x.png');
+}
+
+.stories__item-text {
+	z-index: 1;
+	margin: 0;
+	margin-bottom: 24px;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 167%;
+	text-align: center;
+	color: #ffffff;
+}
+
+.stories__item-str {
+	margin-bottom: 2px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 156%;
+	text-align: center;
+	color: #79c8c7;
+}
+
+.stories__item-italic {
+	font-size: 13px;
+	line-height: 138%;
+	text-align: center;
+	color: #ffffff;
+}
+
+@include max-width(768px) {
+	.stories {
+		padding: 100px 98px 178px 97px;
+
+		&::before {
+			top: calc(50% - 603px);
+			left: calc(50% - 384px);
+		}
+
+		&::after {
+			right: calc(50% - 384px);
+			bottom: calc(50% - 602px);
+		}
+	}
+
+	.title-wrapper {
+		width: 100%;
+		max-width: 573px;
+	}
+
+	.stories__title {
+		margin-bottom: 84px;
+		font-size: 32px;
+	}
+
+	.stories__list {
+		flex-direction: column;
+		margin: 0 auto;
+	}
+
+	.stories__item {
+		width: 100%;
+		max-width: 573px;
+	}
+
+	.stories__item + .stories__item {
+		margin-top: 140px;
+		margin-left: 0;
+	}
+
+	.stories__item::before {
+		top: calc(50% - 112px);
+		left: calc(50% - 34px);
+	}
+
+	.stories__item::after {
+		left: calc(50% - 34px);
+		bottom: calc(50% - 190px);
+		margin-bottom: 48px;
+	}
+
+	.stories__item-text {
+		margin-bottom: 16px;
+	}
+
+	.stories__item-italic {
+		margin-bottom: 16px;
+	}
+}
+
+@include max-width(576px) {
+	.stories {
+		padding: 140px 24px 242px;
+
+		&::before {
+			top: calc(50% - 655px);
+			left: calc(50% - 286px);
+		}
+
+		&::after {
+			right: calc(50% - 287px);
+			bottom: calc(50% - 653px);
+		}
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	.stories::before {
+		background-image: url('../images/stories-before-bg@2x.png');
+	}
+
+	.stories::after {
+		background-image: url('../images/stories-after-bg@2x.png');
+	}
+
+	.stories__item::before {
+		background-image: url('../images/kavichka@2x.png');
+	}
+
+	.stories__item::after {
+		background-image: url('../images/Oval_1@2x.png');
+	}
+
+	.stories__item:nth-child(2)::after {
+		background-image: url('../images/Oval_2@2x.png');
+	}
+
+	.stories__item:nth-child(3)::after {
+		background-image: url('../images/Oval_3@2x.png');
+	}
+}
