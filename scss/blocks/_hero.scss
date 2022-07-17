@@ -7,7 +7,7 @@
 .hero::before {
 	position: absolute;
 	top: calc(50% - 200px);
-	left: calc(50% - 844px);
+	left: calc(50% - 760px);
 	width: 100px;
 	height: 200px;
 	background-image: url('../images/header-bg-left1x.png');
@@ -29,7 +29,7 @@
 	justify-content: space-between;
 }
 
-.title-wrapper {
+.hero__title-wrapper {
 	width: 50%;
 	max-width: 635px;
 	margin-right: 30px;
@@ -72,6 +72,24 @@
 	background-color: #79c8c7;
 }
 
+@include max-width(1100px) {
+	.hero::after {
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: 0 auto;
+	}
+}
+
+@include max-width(900px) {
+	.hero::after {
+		right: 0;
+		left: 0;
+		bottom: 0;
+		margin: 0 auto;
+	}
+}
+
 @include max-width(768px) {
 	.hero {
 		padding: 48px 0 256px 0;
@@ -81,7 +99,6 @@
 		}
 
 		&::after {
-			top: 426px;
 			right: 0;
 			left: 0;
 			bottom: 0;
@@ -129,7 +146,6 @@
 		}
 
 		&::after {
-			top: 321px;
 			right: 0;
 			left: 0;
 			bottom: 0;
