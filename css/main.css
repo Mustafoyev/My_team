@@ -1031,12 +1031,6 @@ main {
     right: 0;
     bottom: 0;
   }
-  .stories .stories__item:nth-child(1):before {
-    margin-bottom: 10px;
-  }
-  .stories .stories__item:nth-child(2):before {
-    margin-bottom: 10px;
-  }
   .title-wrapper {
     width: 100%;
     max-width: 573px;
