@@ -181,12 +181,9 @@
 		text-align: start;
 	}
 
-	.build__list {
-		margin: o auto;
-	}
-
 	.build__item {
-		width: 327px;
+		width: 100%;
+		max-width: 327px;
 		padding-left: 0;
 		padding-top: 88px;
 		margin: 0 auto;
