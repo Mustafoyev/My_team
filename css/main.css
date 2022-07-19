@@ -796,6 +796,9 @@ main {
   .build__title {
     text-align: start;
   }
+  .build__list {
+    margin: o auto;
+  }
   .build__item {
     width: 327px;
     padding-left: 0;
