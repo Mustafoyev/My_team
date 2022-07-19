@@ -237,6 +237,27 @@
 			bottom: 0;
 		}
 	}
+
+	.stories__item {
+		padding-top: 35px;
+	}
+
+	.stories__item::before {
+		top: 0;
+		margin: 0 auto;
+	}
+
+	.stories__item::after {
+		margin-bottom: 16px;
+	}
+
+	.stories__item:nth-child(1):after {
+		margin-bottom: 16px;
+	}
+
+	.stories__item:nth-child(2):after {
+		margin-bottom: 16px;
+	}
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
