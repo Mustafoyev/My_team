@@ -176,6 +176,13 @@
 			right: 0;
 			bottom: 0;
 		}
+
+		.stories__item:nth-child(1):before {
+			margin-bottom: 10px;
+		}
+		.stories__item:nth-child(2):before {
+			margin-bottom: 10px;
+		}
 	}
 
 	.title-wrapper {
