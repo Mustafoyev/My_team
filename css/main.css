@@ -481,6 +481,8 @@ main {
   width: 100px;
   height: 200px;
   background-image: url("../images/header-bg-left1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   content: "";
 }
 
@@ -491,6 +493,8 @@ main {
   width: 358px;
   height: 100px;
   background-image: url("../images/header-bg-bottom1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   content: "";
 }
 
@@ -618,6 +622,22 @@ main {
   }
   .text-wrapper {
     max-width: 327px;
+  }
+}
+@media only screen and (max-width: 448px) {
+  .hero::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-image: url("../images/header-bg-bottom1x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+  }
+  .hero__inner {
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -782,7 +802,7 @@ main {
 }
 @media only screen and (max-width: 576px) {
   .build {
-    padding: 64px 0 64px 24px;
+    padding: 64px 24px;
   }
   .build::after {
     top: 0;

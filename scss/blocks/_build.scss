@@ -163,7 +163,7 @@
 
 @include max-width(576px) {
 	.build {
-		padding: 64px 0 64px 24px;
+		padding: 64px 24px;
 
 		&::after {
 			top: 0;
