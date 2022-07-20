@@ -12,6 +12,16 @@
 	margin-right: 80px;
 }
 
+.logo:hover {
+	opacity: 0.8;
+	transition: all 0.3s ease;
+}
+
+.logo:active {
+	opacity: 0.6;
+	transition: all 0.3s ease;
+}
+
 .navbar__list {
 	@include display-starter;
 	@include list-styles;
@@ -27,6 +37,16 @@
 	font-size: 18px;
 	line-height: 156%;
 	color: #ffffff;
+}
+
+.navbar__link:hover {
+	color: #f67e7e;
+	transition: all 0.3s ease;
+}
+
+.navbar__link:active {
+	opacity: 0.6;
+	transition: all 0.3s ease;
 }
 
 .header__link {

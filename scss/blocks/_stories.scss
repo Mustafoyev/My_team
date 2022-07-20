@@ -125,6 +125,18 @@
 	color: #ffffff;
 }
 
+@include max-width(1400px) {
+	.stories::before {
+		top: 0;
+		left: 0;
+	}
+
+	.stories::after {
+		right: 0;
+		bottom: 0;
+	}
+}
+
 @include max-width(1100px) {
 	.stories::before {
 		position: absolute;

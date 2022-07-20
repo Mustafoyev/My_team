@@ -96,6 +96,13 @@
 	opacity: 0.8;
 }
 
+@include max-width(1400px) {
+	.build::after {
+		bottom: 0;
+		right: 0;
+	}
+}
+
 @include max-width(1200px) {
 	.build::after {
 		top: 0;
