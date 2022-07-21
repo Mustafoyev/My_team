@@ -800,6 +800,17 @@ main {
     margin: 0 auto;
   }
 }
+@media only screen and (max-width: 800px) {
+  .build__conwrapper {
+    width: 90%;
+  }
+  .build__list {
+    width: 90%;
+  }
+  .build__item {
+    width: 90%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .build {
     padding: 100px 0 100px 98px;
