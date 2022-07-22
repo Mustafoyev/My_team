@@ -1,0 +1,112 @@
+.clients {
+	position: relative;
+	padding: 140px 0;
+	background-color: #012f34;
+
+	&::before {
+		position: absolute;
+		top: calc(50% - 222px);
+		left: calc(50% - 758px);
+		width: 200px;
+		height: 200px;
+		background-image: url('../images/clients-bg.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+}
+
+.clients__title {
+	margin: 0;
+	margin-bottom: 70px;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 100%;
+	text-align: center;
+	color: #ffffff;
+}
+
+.pictures-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@include max-width(1500px) {
+	.clients::before {
+		top: 0;
+		left: 0;
+	}
+}
+
+@include max-width(830px) {
+	.clients {
+		padding: 88px 0;
+	}
+
+	.clients::before {
+		top: 0;
+		left: 0;
+		width: 200px;
+		height: 100px;
+		background-image: url('../images/clients-bg-tablet.png');
+	}
+
+	.pictures-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.clients__pictures:nth-child(2) {
+		margin-top: -100px;
+	}
+
+	.clients__pictures:nth-child(3) {
+		margin-top: -100px;
+	}
+
+	.clients__pictures:nth-child(4) {
+		margin-top: -180px;
+	}
+
+	.clients__pictures:nth-child(5) {
+		margin-top: -170px;
+	}
+
+	.clients__logo {
+		display: block;
+	}
+}
+
+@include max-width(700px) {
+	.clients::before {
+		top: 0;
+		left: 0;
+		width: 100px;
+		height: 100px;
+		background-image: url('../images/clients-bg-mobile.png');
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	.clients::before {
+		background-image: url('../images/clients-bg@2x.png');
+	}
+
+	@include max-width(830px) {
+		.clients::before {
+			background-image: url('../images/clients-bg-tablet@2x.png');
+		}
+	}
+
+	@include max-width(700px) {
+		.clients::before {
+			background-image: url('../images/clients-bg-mobile@2x.png');
+		}
+	}
+}

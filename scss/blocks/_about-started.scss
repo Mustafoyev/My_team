@@ -1,0 +1,128 @@
+.started {
+	position: relative;
+	padding: 76px 0;
+	background-color: #f67e7e;
+
+	&::before {
+		position: absolute;
+		bottom: calc(50% - 101px);
+		left: calc(50% - 760px);
+		width: 200px;
+		height: 144px;
+		background-image: url('../images/Group-8.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+}
+
+.started__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.started__title {
+	margin: 0;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 100%;
+	color: #012f34;
+}
+
+.started__link {
+	width: 100%;
+	max-width: 153px;
+	display: inline-block;
+	margin-left: 0;
+	border: 2px solid #012f34;
+	color: #012f34;
+}
+
+.started__link:hover {
+	background-color: #012f34;
+	color: #ffffff;
+	transition: all 0.3s ease;
+}
+
+.started__link:active {
+	background-color: transparent;
+	color: #012f34;
+	opacity: 0.25;
+	transition: all 0.3s ease;
+}
+
+@include max-width(1200px) {
+	.started::before {
+		bottom: 0;
+		left: 0;
+	}
+}
+
+@include max-width(1100px) {
+	.started::before {
+		bottom: 0;
+		left: 0;
+		height: 122px;
+	}
+
+	.started__inner {
+		justify-content: center;
+	}
+
+	.started__title {
+		font-size: 32px;
+		margin-right: 120px;
+	}
+}
+
+@include max-width(900px) {
+	.started::before {
+		bottom: 0;
+		left: 0;
+		height: 122px;
+	}
+
+	.started__title {
+		font-size: 32px;
+		margin-right: 64px;
+	}
+}
+
+@include max-width(660px) {
+	.started {
+		padding: 83px 0;
+
+		&::before {
+			bottom: 0;
+			left: 0;
+			height: 122px;
+		}
+	}
+
+	.started__inner {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.started__title {
+		margin-right: 0;
+		margin-bottom: 24px;
+		text-align: center;
+	}
+
+	.started__link {
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	.started::before {
+		background-image: url('../images/Group-8@2x.png');
+	}
+}
